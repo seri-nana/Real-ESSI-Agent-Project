@@ -1,16 +1,13 @@
-from langchain_ollama import ChatOllama
+import os
+from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
-import time
 
-# Critic Agent LLM
-# (temporary: Ollama)
-# Later replace with ChatOpenAI
-
-
-llm = ChatOllama(
-    model="llama3.1",
-    temperature=0
+llm = ChatOpenAI(
+    model="sonar",
+    api_key="",
+    base_url="https://api.perplexity.ai",
 )
+
 
 
 # Input from user (right now harcoded)
