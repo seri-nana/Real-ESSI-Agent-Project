@@ -68,8 +68,6 @@ start_time = time.perf_counter()
 response = llm.invoke(final_prompt)
 end_time = time.perf_counter()
 
-print(response.content)
-
 # Runtime
 print("\n----- Performance -----")
 print(f"Runtime: {end_time - start_time:.3f} seconds")
