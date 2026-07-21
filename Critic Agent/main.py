@@ -88,8 +88,8 @@ except Exception:
 # Cost Calculation
 
 if total_tokens is not None:
-    input_cost = (input_tokens / 1_000_000) * 0.40
-    output_cost = (output_tokens / 1_000_000) * 1.60
+    input_cost = (input_tokens / 1_000_000) * 0.25
+    output_cost = (output_tokens / 1_000_000) * 2.50
     total_cost = input_cost + output_cost
 
 else:
