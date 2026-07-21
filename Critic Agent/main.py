@@ -7,7 +7,6 @@ import time
 # (temporary: Ollama)
 # Later replace with ChatOpenAI
 
-
 llm = ChatOpenAI(
     model="sonar",
     api_key="",
@@ -15,18 +14,14 @@ llm = ChatOpenAI(
     temperature=0
 )
 
-
-
 # Input from user (right now harcoded)
 user_question = """
 Why is my REAL ESSI simulation failing?
 """
 
-
 # Temporary Agent #2 answer
 agent2_answer = """
 """
-
 
 critic_prompt = ChatPromptTemplate.from_template(
 """
@@ -66,11 +61,6 @@ final_prompt = critic_prompt.format(
     answer=agent2_answer
 )
 
-
-
-
-# Run Critic Agent
-response = llm.invoke(final_prompt)
 
 
 #measure run time
