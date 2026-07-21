@@ -1,13 +1,13 @@
 import os
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
+import time
 
 llm = ChatOpenAI(
     model="sonar",
     api_key="",
     base_url="https://api.perplexity.ai",
 )
-
 
 
 # Input from user (right now harcoded)
@@ -53,18 +53,11 @@ Do not write anything else.
 )
 
 
-
 # Create final prompt
 final_prompt = critic_prompt.format(
     question=user_question,
     answer=agent2_answer
 )
-
-
-
-
-# Run Critic Agent
-response = llm.invoke(final_prompt)
 
 
 #measure run time
@@ -104,8 +97,6 @@ else:
     output_cost = None
     total_cost = None
 
-
-
 # CO2 Estimate
 if total_tokens is not None:
     ENERGY_PER_TOKEN = 0.000000086  # kWh/token
@@ -116,7 +107,6 @@ if total_tokens is not None:
 else:
     energy_kwh = None
     estimated_co2 = None
-
 
 # Print
 print(response.content)
