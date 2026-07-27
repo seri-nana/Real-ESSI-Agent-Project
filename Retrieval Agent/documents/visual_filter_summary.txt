@@ -1,0 +1,11 @@
+VISUAL-PAGE FILTER SUMMARY
+==================================================
+Pages containing figure captions: 1376
+Pages containing table captions: 164
+Pages containing embedded raster images: 814
+
+High-confidence visual pages: 1423
+Possible uncaptioned visual pages: 324
+
+High-confidence list: C:\Users\rajes\Documents\pythonprojects\real-essi-retreval-agent\documents\high_confidence_visual_pages.txt
+Review list: C:\Users\rajes\Documents\pythonprojects\real-essi-retreval-agent\documents\possible_uncaptioned_visual_pages.txt
