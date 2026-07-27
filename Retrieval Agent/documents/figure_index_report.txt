@@ -1,0 +1,9 @@
+FIGURE INDEX REPORT
+==================================================
+PDF pages scanned: 3012
+Pages containing indexed captions: 1279
+Figure entries: 1854
+Table entries: 171
+Total index entries: 2025
+
+Output file: C:\Users\rajes\Documents\pythonprojects\real-essi-retreval-agent\documents\jeremic_lecture_notes_figures.md
